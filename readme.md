@@ -1,4 +1,4 @@
-#Appointment Booking APP using AngularJS, NodeJS, MongoDB
+# Appointment Booking Single Page Web Application using AngularJS, NodeJS, MongoDB
 
 ##Installation
 * Install NodeJS
