@@ -11,6 +11,7 @@ class MainController {
     this.slots = [];
     this.$mdMedia = $mdMedia;
     this.$mdDialog = $mdDialog;
+    
     // Configure dates
     var today = new Date();
     var dd = today.getDate();
@@ -65,10 +66,7 @@ allot(slots, days, appointments){
             var active = true;
             _.each(appointments, function(g) { 
                 var sdt = moment(new Date(g.date));
-                // console.log(moment(g.date)._i, moment(x)._i);
-            //   console.log(moment.duration(sdt.diff(mx))._milliseco   nds);  
                 if(moment.duration(sdt.diff(mx))._milliseconds===0){
-                    // console.log('xxxxxxxxxxxxxx');
                     active = false;
                 }
             })
@@ -76,14 +74,12 @@ allot(slots, days, appointments){
         })
         a.push({k:k,v:v});
     })
-// console.log(a)
 return a;
 }
 
 
   showAdvanced(slot) {
       var vm = this;
-    //   console.log('ev')
     var useFullScreen = (this.$mdMedia('sm') || this.$mdMedia('xs'))  && this.customFullscreen;
     this.$mdDialog.show({
       controller: function($scope,$mdDialog,slot){
@@ -97,17 +93,12 @@ return a;
       locals : {
           slot : slot
       },
-    //   parent: angular.element(document.body),
-    //   targetEvent: ev,
       clickOutsideToClose:true,
       fullscreen: useFullScreen
     })
     .then(function(answer) {
         answer.date = answer.slot.date;
         vm.save(answer);
-      console.log('You said the information was "', answer);
-    }, function() {
-      console.log('You cancelled the dialog.');
     });
     
   }

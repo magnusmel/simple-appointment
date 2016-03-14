@@ -1,20 +1,11 @@
 {
   "name": "appointments",
   "description": "A single page appointment booking app using AngularJS",
-  "main": "angular.js",
   "authors": [
-    "Swadesh <2lessons@gmail.com>"
+    "Swadesh <swadesh@codenx.com>"
   ],
   "license": "ISC",
   "homepage": "https://github.com/itswadesh/appointments",
-  "moduleType": [],
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "public/bower_components",
-    "test",
-    "tests"
-  ],
   "dependencies": {
     "angular": "~1.5.0",
     "angular-material": "^1.0.6",
