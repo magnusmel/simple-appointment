@@ -7,8 +7,6 @@
 
 Run the following commands
 <pre>
-npm install -g bower
 npm install 
-bower install
 node server
 </pre>
