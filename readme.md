@@ -1,5 +1,7 @@
 # Appointment Booking Single Page Web Application using AngularJS, NodeJS, MongoDB
 
+The full tutorial can be foud @ http://angularcode.com/appointment-booking-using-angularjs-nodejs-mongodb/
+
 ##Installation
 * Install NodeJS
 * Install MongoDB and start the mongod service
