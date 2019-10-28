@@ -12,6 +12,7 @@
   "devDependencies": {},
   "scripts": {
     "dev": "node server",
+    "build": "node server",
     "start": "node server"
   },
   "repository": {
