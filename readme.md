@@ -10,5 +10,5 @@ The full tutorial can be foud @ http://angularcode.com/appointment-booking-using
 Run the following commands
 <pre>
 npm install 
-node server
+npm run dev
 </pre>
